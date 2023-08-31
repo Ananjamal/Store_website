@@ -33,7 +33,9 @@ Follow these steps to get started with the examples:
 6. Run migrations: `php artisan migrate`
 7. Run migrations seeder: `php artisan migrate:refresh --seed`
 8. Start the development server: `php artisan serve`
-
+9. the login details:
+    username : admin@gmail.com
+    password : admin
 ## Usage
 
 These examples are intended to be educational and provide a foundation for building your store website. You can use the provided code snippets and components as inspiration for your projects. Feel free to modify and extend the examples to suit your specific requirements.
