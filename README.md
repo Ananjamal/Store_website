@@ -31,7 +31,8 @@ Follow these steps to get started with the examples:
 4. Copy the `.env.example` file to `.env` and configure your database settings.
 5. Generate an application key: `php artisan key:generate`
 6. Run migrations: `php artisan migrate`
-7. Start the development server: `php artisan serve`
+7. Run migrations seeder: `php artisan migrate:refresh --seed`
+8. Start the development server: `php artisan serve`
 
 ## Usage
 
