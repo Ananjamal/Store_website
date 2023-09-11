@@ -60,14 +60,7 @@
                                                 {{ $order->order_status }}
                                             </p>
                                         </td>
-                                        <td>
-                                            <button data-toggle="modal" data-target="#updateStatusModal"
-                                                wire:click="edit_category({{ $order->id }})"
-                                                class="btn btn-danger">
-                                                Edit
-                                            </button>
-
-                                        </td>
+        
                                         <td class="text-center align-middle">
                                             <button class="btn btn-success">
                                                 <a href="{{ route('ordersDetails', ['id' => $order->id]) }}">More</a>
@@ -76,22 +69,7 @@
                                     </tr>
 
                                     @endforeach
-                                    <div wire:ignore.self class="modal fade" id="updateStatusModal" tabindex="-1"
-                                    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle">Add Category</h5>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            @if ($category_id)
-                                                @livewire('admin.categories.edit', [$category_id])
-                                            @endif
-                                        </div>
-                                    </div>
+
                                 </div>
                                 </tbody>
                             </table>

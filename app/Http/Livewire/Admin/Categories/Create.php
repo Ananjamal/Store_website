@@ -17,7 +17,7 @@ class Create extends Component
     protected function rules()
     {
         return [
-            'name' => 'required|min:6',
+            'name' => 'required|min:5',
             'description' => 'required|min:6',
             'image' => 'required|max:1024', // 1MB Max
         ];

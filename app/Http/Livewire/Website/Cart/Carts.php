@@ -101,6 +101,7 @@ class Carts extends Component
 
     //////////////////////////////////
 
+
     public function refreshpage()
     {
         session()->flash('success', 'Product deleted from cart successfully.');

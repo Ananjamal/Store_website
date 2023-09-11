@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('layouts.frontEnd.app');
 // });
-
 Route::get('/', App\Http\Livewire\Website\Home::class)->name('home');
 Route::get('/shop', App\Http\Livewire\Website\Shop\Shop::class)->name('shop');
 Route::get('/category/{id}/products', App\Http\Livewire\Website\Shop\ProductsCategory::class)->name('products-category');

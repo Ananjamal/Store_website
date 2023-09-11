@@ -25,7 +25,7 @@ class Create extends Component
     {
         return [
             'category_id' => 'required',
-            'name' => 'required|min:6',
+            'name' => 'required|min:5',
             'description' => 'required|min:6',
             'image' => 'required|max:1024', // 1MB Max
             'price' => 'required', // 1MB Max
